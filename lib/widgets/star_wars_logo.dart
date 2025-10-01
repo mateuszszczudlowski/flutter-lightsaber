@@ -5,10 +5,7 @@ import 'package:lightsaber_app/constants/app_constants.dart';
 /// Widget that displays the Star Wars "Hello there" image.
 class StarWarsLogo extends StatelessWidget {
   /// Creates a [StarWarsLogo] widget.
-  const StarWarsLogo({required this.glowAnimation, super.key});
-
-  /// Animation for the glow effect (kept for compatibility but not used).
-  final Animation<double> glowAnimation;
+  const StarWarsLogo({super.key});
 
   @override
   Widget build(BuildContext context) {

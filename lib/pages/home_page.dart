@@ -116,13 +116,13 @@ class _LightsaberHomePageState extends State<LightsaberHomePage>
         onTap: _onScreenTap,
         child: Stack(
           children: [
-            Positioned(
+            const Positioned(
               top: 80,
               left: 0,
               right: 0,
               child: Align(
                 alignment: Alignment.topCenter,
-                child: StarWarsLogo(glowAnimation: _glowAnimation),
+                child: StarWarsLogo(),
               ),
             ),
             Positioned(
@@ -143,7 +143,7 @@ class _LightsaberHomePageState extends State<LightsaberHomePage>
             ),
             // Instructional text
             Positioned(
-              bottom: 40,
+              bottom: 70,
               left: 0,
               right: 0,
               child: Align(
