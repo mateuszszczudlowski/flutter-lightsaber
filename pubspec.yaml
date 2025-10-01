@@ -1,8 +1,8 @@
-name: neon_lightsaber_app
+name: lightsaber_app
 description: "A Star Wars-themed lightsaber app with motion detection and sound effects."
 
 # Prevents accidental publishing to pub.dev
-publish_to: 'none'
+publish_to: "none"
 
 # App version and build number
 version: 1.0.0+1

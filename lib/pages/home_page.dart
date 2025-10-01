@@ -1,12 +1,12 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
-import 'package:neon_lightsaber_app/helpers/accelerometer_helper.dart';
-import 'package:neon_lightsaber_app/helpers/audio_helper.dart';
-import 'package:neon_lightsaber_app/helpers/color_generator.dart';
-import 'package:neon_lightsaber_app/widgets/lightsaber_widget.dart';
-import 'package:neon_lightsaber_app/widgets/star_wars_logo.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/helpers/accelerometer_helper.dart';
+import 'package:lightsaber_app/helpers/audio_helper.dart';
+import 'package:lightsaber_app/helpers/color_generator.dart';
+import 'package:lightsaber_app/widgets/lightsaber_widget.dart';
+import 'package:lightsaber_app/widgets/star_wars_logo.dart';
 
 /// Home page widget that displays the lightsaber interface.
 class LightsaberHomePage extends StatefulWidget {

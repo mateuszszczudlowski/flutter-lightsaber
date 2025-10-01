@@ -35,8 +35,8 @@ A stunning Flutter application that brings the iconic Star Wars lightsaber exper
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
-   cd neon_lightsaber_app
+   git clone https://github.com/mateuszszczudlowski/flutter-lightsaber.git
+   cd flutter-lightsaber
    ```
 
 2. **Install dependencies**
@@ -110,37 +110,22 @@ The app features a sophisticated color generation system that creates authentic 
 - **Bright Neon Colors**: Each ignition generates vibrant RGB values optimized for visibility
 - **Dynamic Gradients**: The blade features multi-layered gradients for depth and realism
 - **Glow Effects**: Animated shadows create an authentic neon glow around the blade
-- **Color Variety**: From classic blue and green to rare purple and yellow sabers
 
 ### 🔊 **Authentic Star Wars Audio**
 The audio system brings the iconic lightsaber experience to life:
 
 #### **Ignition Sound** (`lightsaber-ignition-6816.mp3`)
 - **Classic Activation**: The unmistakable "snap-hiss" of a lightsaber coming to life
-- **High Quality**: Crystal clear audio that captures the power and energy
-- **Perfectly Timed**: Synchronized with the blade extension animation
 
 #### **Swing Sound** (`swing3-94210.mp3`)
 - **Motion Activated**: Triggered by actual device movement via accelerometer
-- **Realistic Physics**: Sound intensity matches the detected shake strength
-- **Immersive Experience**: Creates the feeling of wielding a real lightsaber
-- **Cooldown System**: Prevents audio spam with intelligent timing
 
 ### 🎭 **Theme Details**
 - **Star Wars Aesthetic**: Faithful to the original movie design language
 - **Neon Cyberpunk**: Modern twist with vibrant glow effects
 - **Minimalist UI**: Clean interface that doesn't distract from the lightsaber
-- **Dark Theme**: Perfect backdrop to showcase the neon blade effects
 
 The combination of authentic sounds, realistic physics, and stunning visuals creates an immersive experience that truly captures the magic of wielding a lightsaber from a galaxy far, far away! ⭐
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -150,8 +135,7 @@ This project is licensed under the MIT License.
 
 - Star Wars franchise for the inspiration
 - Flutter team for the amazing framework
-- Audio assets from freesound.org
-- The Force, for guiding this development
+- Audio assets from pixabay.com
 
 ---
 

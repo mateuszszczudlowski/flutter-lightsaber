@@ -1,4 +1,4 @@
-package com.example.neon_lightsaber_app
+package com.example.lightsaber_app
 
 import io.flutter.embedding.android.FlutterActivity
 

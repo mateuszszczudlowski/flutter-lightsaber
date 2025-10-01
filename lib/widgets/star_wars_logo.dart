@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
 
 /// Widget that displays the Star Wars "Hello there" image.
 class StarWarsLogo extends StatelessWidget {

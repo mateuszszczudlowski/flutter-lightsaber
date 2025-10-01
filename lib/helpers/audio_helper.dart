@@ -1,6 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
 
 /// Helper class for managing lightsaber audio effects.
 class AudioHelper {

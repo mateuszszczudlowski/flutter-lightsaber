@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
-import 'package:neon_lightsaber_app/pages/home_page.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/pages/home_page.dart';
 
 /// Entry point of the Lightsaber application.
 void main() async {

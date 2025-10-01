@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
 
 /// Widget that displays the lightsaber with blade and hilt.
 class LightsaberWidget extends StatelessWidget {
@@ -32,7 +32,7 @@ class LightsaberWidget extends StatelessWidget {
   /// Cached shadow calculations for performance optimization.
   List<BoxShadow> _buildBladeShadows(double glowValue, Color color) {
     if (!isBladeIgnited) return [];
-    
+
     return [
       BoxShadow(
         color: color,
@@ -60,7 +60,7 @@ class LightsaberWidget extends StatelessWidget {
       builder: (context, child) {
         final double glowValue = glowAnimation.value;
         final double bladeValue = bladeAnimation.value;
-        
+
         return Container(
           margin: const EdgeInsets.only(top: 50),
           child: Column(
@@ -102,77 +102,77 @@ class LightsaberWidget extends StatelessWidget {
                       ],
                     ),
                     child: Container(
-                    width: AppConstants.hiltWidth,
-                    height: AppConstants.hiltHeight,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      gradient: const LinearGradient(
-                        colors: [
-                          Color(0xFF2C2C2C),
-                          Color(0xFF5C5C5C),
-                          Color(0xFF8C8C8C),
-                          Color(0xFF5C5C5C),
-                          Color(0xFF2C2C2C),
-                        ],
-                      ),
-                      border: Border.all(
-                        color: const Color(0xFF888888),
-                        width: 2,
-                      ),
-                    ),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: [
-                        // Top section with activation button
-                        Container(
-                          width: 25,
-                          height: 25,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[600],
-                            shape: BoxShape.circle,
-                          ),
+                      width: AppConstants.hiltWidth,
+                      height: AppConstants.hiltHeight,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
+                        gradient: const LinearGradient(
+                          colors: [
+                            Color(0xFF2C2C2C),
+                            Color(0xFF5C5C5C),
+                            Color(0xFF8C8C8C),
+                            Color(0xFF5C5C5C),
+                            Color(0xFF2C2C2C),
+                          ],
                         ),
-                        // Metallic bands
-                        ...List.generate(
-                          3,
-                          (index) => Container(
-                            width: 40,
-                            height: 4,
+                        border: Border.all(
+                          color: const Color(0xFF888888),
+                          width: 2,
+                        ),
+                      ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Top section with activation button
+                          Container(
+                            width: 25,
+                            height: 25,
                             decoration: BoxDecoration(
-                              color: Colors.grey[700],
-                              borderRadius: BorderRadius.circular(2),
+                              color: Colors.grey[600],
+                              shape: BoxShape.circle,
                             ),
                           ),
-                        ),
-                        // Power indicator
-                        Container(
-                          width: 30,
-                          height: 6,
-                          decoration: BoxDecoration(
-                            color: isBladeIgnited ? Colors.green : Colors.red,
-                            borderRadius: BorderRadius.circular(3),
-                            boxShadow: isBladeIgnited
-                                ? [
-                                    const BoxShadow(
-                                      color: Colors.green,
-                                      blurRadius: 4,
-                                      spreadRadius: 1,
-                                    ),
-                                  ]
-                                : [],
+                          // Metallic bands
+                          ...List.generate(
+                            3,
+                            (index) => Container(
+                              width: 40,
+                              height: 4,
+                              decoration: BoxDecoration(
+                                color: Colors.grey[700],
+                                borderRadius: BorderRadius.circular(2),
+                              ),
+                            ),
                           ),
-                        ),
-                        // Bottom grip
-                        Container(
-                          width: 40,
-                          height: 30,
-                          decoration: BoxDecoration(
-                            color: Colors.grey[800],
-                            borderRadius: BorderRadius.circular(8),
+                          // Power indicator
+                          Container(
+                            width: 30,
+                            height: 6,
+                            decoration: BoxDecoration(
+                              color: isBladeIgnited ? Colors.green : Colors.red,
+                              borderRadius: BorderRadius.circular(3),
+                              boxShadow: isBladeIgnited
+                                  ? [
+                                      const BoxShadow(
+                                        color: Colors.green,
+                                        blurRadius: 4,
+                                        spreadRadius: 1,
+                                      ),
+                                    ]
+                                  : [],
+                            ),
                           ),
-                        ),
-                      ],
-                    ),
+                          // Bottom grip
+                          Container(
+                            width: 40,
+                            height: 30,
+                            decoration: BoxDecoration(
+                              color: Colors.grey[800],
+                              borderRadius: BorderRadius.circular(8),
+                            ),
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ),

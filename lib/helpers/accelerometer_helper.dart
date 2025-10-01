@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/services.dart';
-import 'package:neon_lightsaber_app/constants/app_constants.dart';
+import 'package:lightsaber_app/constants/app_constants.dart';
 import 'package:sensors_plus/sensors_plus.dart';
 
 /// Helper class for managing accelerometer-based shake detection.

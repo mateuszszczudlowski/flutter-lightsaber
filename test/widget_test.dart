@@ -7,7 +7,7 @@
 
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:neon_lightsaber_app/main.dart';
+import 'package:lightsaber_app/main.dart';
 
 void main() {
   testWidgets('Neon lightsaber app displays Hello there text', (
