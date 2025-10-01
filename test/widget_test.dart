@@ -10,7 +10,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lightsaber_app/main.dart';
 
 void main() {
-  testWidgets('Neon lightsaber app displays Hello there text', (
+  testWidgets('Lightsaber app displays Hello there text', (
     WidgetTester tester,
   ) async {
     // Build our app and trigger a frame.
