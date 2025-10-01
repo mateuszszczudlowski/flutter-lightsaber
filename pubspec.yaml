@@ -1,0 +1,41 @@
+name: neon_lightsaber_app
+description: "A Star Wars-themed lightsaber app with motion detection and sound effects."
+
+# Prevents accidental publishing to pub.dev
+publish_to: 'none'
+
+# App version and build number
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  # For playing audio files
+  audioplayers: ^6.0.0
+  # iOS style icons
+  cupertino_icons: ^1.0.8
+  flutter:
+    sdk: flutter
+  # For accelerometer detection and lightsaber sound effects
+  sensors_plus: ^6.0.1
+
+dev_dependencies:
+  # Recommended lints for good coding practices
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+  # Solid lints for static code analysis
+  solid_lints: ^0.3.1
+
+flutter:
+  # Enable Material Design icons
+  uses-material-design: true
+
+  # App assets
+  assets:
+    # Audio files
+    - assets/lightsaber-ignition-6816.mp3
+    - assets/swing3-94210.mp3
+    # Images
+    - assets/Star_Wars_hello.png
